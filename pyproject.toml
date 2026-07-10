@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physweave"
+version = "0.1.0"
+description = "A unified, modular toolkit weaving together differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuit simulation, and molecular dynamics."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aravind Balaji", email = "aravindo2011@gmail.com" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+jax = ["jax>=0.4"]
+torch = ["torch>=2.0"]
+dev = ["pytest>=7.0", "ruff", "matplotlib"]
+
+[tool.setuptools.packages.find]
+include = ["physweave*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
