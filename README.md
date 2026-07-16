@@ -138,3 +138,19 @@ Good first issues are labeled [`good first issue`](../../issues?q=is%3Aissue+is%
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+## 🧒 Explain Like I'm 5
+
+Physics simulators and machine learning, woven together: the simulator can 'feel' how changing an input changes the outcome (differentiable), and neural networks learn to imitate slow physics calculations so they run thousands of times faster.
+
+## 🧰 Tech Stack
+
+Python · differentiable physics simulation · neural PDE surrogates · modular toolkit design
+
+## 🌍 Real-Life Applications
+
+- Engineers running fast 'what-if' design loops instead of overnight simulations
+- Scientific-ML research on physics-informed models
+- Teaching how gradients flow through physical systems
